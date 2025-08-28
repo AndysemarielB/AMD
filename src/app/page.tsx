@@ -31,7 +31,7 @@ const products = [
   {
     id: 4,
     name: 'Petit Chat',
-    description: 'Mignon petit chaton, plein d\'énergie et d\'amour',
+    description: 'Mignon petit chaton, plein d&apos;énergie et d&apos;amour',
     price: '30,000 FCFA',
     category: 'chats',
     icon: Cat
@@ -147,7 +147,7 @@ export default function Home() {
           >
             <h2 className="text-4xl font-bold mb-4 text-gray-800">Qui sommes-nous ?</h2>
             <p className="text-lg text-gray-600 mb-12">
-              Chez Dydy, nous nous spécialisons dans l'élevage de lapins et de chats de qualité. 
+              Chez Dydy, nous nous spécialisons dans l&apos;élevage de lapins et de chats de qualité. 
               Nos animaux sont élevés dans des conditions optimales, avec amour et attention. 
               Nous proposons des animaux adultes et des petits, tous en excellente santé.
             </p>
@@ -297,8 +297,8 @@ export default function Home() {
           >
             <h3 className="text-2xl font-semibold">Pour toute commande ou information</h3>
             <p className="text-lg opacity-90">
-              N'hésitez pas à nous contacter directement sur WhatsApp pour passer votre commande 
-              ou obtenir plus d'informations sur nos animaux.
+              N&apos;hésitez pas à nous contacter directement sur WhatsApp pour passer votre commande 
+              ou obtenir plus d&apos;informations sur nos animaux.
             </p>
             
             <div className="space-y-4">
