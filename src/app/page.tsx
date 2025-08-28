@@ -26,26 +26,19 @@ const orderWhatsApp = (productInfo: string) => {
   window.open(whatsappUrl, '_blank');
 };
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <nav className="max-w-4xl mx-auto px-4 py-6">
-          <div className="flex items-center">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg">
-              <h1 className="text-2xl font-bold tracking-wide">CHEZ AMD</h1>
-            </div>
-            <div className="ml-4">
-              <p className="text-sm text-gray-600 font-medium">Vente d&apos;animaux</p>
-            </div>
-          </div>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Chez AMD</h1>
         </nav>
       </header>
 
       {/* Products Section */}
       <main className="max-w-4xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Nos Produits</h2>
         
         <div className="grid md:grid-cols-2 gap-8">
           {products.map((product) => (
@@ -75,9 +68,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-100 border-t border-gray-200 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg inline-block">
-            <p className="font-bold tracking-wide">CHEZ AMD</p>
-          </div>
+          <p className="text-xl font-bold text-gray-900">Chez AMD</p>
         </div>
       </footer>
     </div>
