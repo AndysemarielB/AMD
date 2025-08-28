@@ -30,9 +30,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200">
-        <nav className="max-w-4xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">Chez AMD</h1>
+      <header className="bg-white border-b border-gray-200 shadow-sm">
+        <nav className="max-w-4xl mx-auto px-4 py-6">
+          <div className="flex items-center">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg">
+              <h1 className="text-2xl font-bold tracking-wide">CHEZ AMD</h1>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm text-gray-600 font-medium">Vente d&apos;animaux</p>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -42,7 +49,7 @@ export default function Home() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div key={product.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
                 src={product.image} 
                 alt={product.name}
@@ -68,7 +75,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-100 border-t border-gray-200 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-gray-600">Chez AMD</p>
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg inline-block">
+            <p className="font-bold tracking-wide">CHEZ AMD</p>
+          </div>
         </div>
       </footer>
     </div>
