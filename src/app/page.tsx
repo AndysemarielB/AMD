@@ -5,17 +5,17 @@ import { MessageCircle } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: 'Lapin Adulte',
-    price: '25,000 FCFA',
+    name: 'Lapin 1.5 à 1.8 kg',
+    price: '10,000 FCFA',
     image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400&h=300&fit=crop',
-    description: 'Lapin adulte en excellente santé'
+    description: 'Lapin vivant pesant entre 1.5 kg et 1.8 kg'
   },
   {
     id: 2,
-    name: 'Chat Adulte',
-    price: '35,000 FCFA',
-    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop',
-    description: 'Chat adulte calme et affectueux'
+    name: 'Lapin +1.8 kg',
+    price: '13,000 FCFA',
+    image: 'https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=400&h=300&fit=crop',
+    description: 'Lapin vivant pesant plus de 1.8 kg'
   }
 ];
 
@@ -26,20 +26,19 @@ const orderWhatsApp = (productInfo: string) => {
   window.open(whatsappUrl, '_blank');
 };
 
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <nav className="max-w-4xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Chez AMD</h1>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Chez AMB</h1>
+          <p className="text-sm text-gray-600 mt-1">Vente de lapins vivants</p>
         </nav>
       </header>
 
-      {/* Products Section */}
+      {/* Product cards */}
       <main className="max-w-4xl mx-auto px-4 py-12">
-        
         <div className="grid md:grid-cols-2 gap-8">
           {products.map((product) => (
             <div key={product.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -57,18 +56,28 @@ export default function Home() {
                   onClick={() => orderWhatsApp(`${product.name} - ${product.price}`)}
                 >
                   <MessageCircle className="w-5 h-5" />
-                  Commander
+                  Commander sur WhatsApp
                 </button>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-gray-700 text-sm leading-6">
+          <p>
+            Tarifs basés sur le poids du lapin vivant :
+          </p>
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Entre 1.5 kg et 1.8 kg: <span className="font-semibold">10,000 FCFA</span></li>
+            <li>Plus de 1.8 kg: <span className="font-semibold">13,000 FCFA</span></li>
+          </ul>
         </div>
       </main>
 
       {/* Footer */}
       <footer className="bg-gray-100 border-t border-gray-200 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="text-xl font-bold text-gray-900">Chez AMD</p>
+          <p className="text-xl font-bold text-gray-900">Chez AMB</p>
         </div>
       </footer>
     </div>
