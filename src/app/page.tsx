@@ -7,14 +7,14 @@ const products = [
     id: 1,
     name: 'Lapin 1.5 à 1.8 kg',
     price: '10,000 FCFA',
-    image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400&h=300&fit=crop',
+    image: 'https://media.istockphoto.com/id/1434983638/fr/photo/jeune-lapin-europ%C3%A9en-face-%C3%A0-la-cam%C3%A9ra-oryctolagus-cuniculus.jpg?s=612x612&w=0&k=20&c=_gCe5U-ViPkZe8eM5bKbO9hkgqS0655mReUPhsUvraQ=',
     description: 'Lapin vivant pesant entre 1.5 kg et 1.8 kg'
   },
   {
     id: 2,
     name: 'Lapin +1.8 kg',
     price: '13,000 FCFA',
-    image: 'https://images.unsplash.com/photo-1544910075-89d53ef2692e?w=400&h=300&fit=crop',
+    image: 'https://www.zooplus.be/magazine/wp-content/uploads/2022/01/zwei-junge-zwergkaninchen-1024x681-2.webp',
     description: 'Lapin vivant pesant plus de 1.8 kg'
   }
 ];
