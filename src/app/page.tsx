@@ -14,7 +14,7 @@ const products = [
     id: 2,
     name: 'Lapin +1.8 kg',
     price: '13,000 FCFA',
-    image: 'https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=400&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1583209814683-c6bf6c5e759f?w=400&h=300&fit=crop',
     description: 'Lapin vivant pesant plus de 1.8 kg'
   }
 ];
